@@ -21,8 +21,9 @@ modprobe br_netfilter
 echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
 
 # update /etc/hosts for DNS
-192.168.1.30 k8s-master
-192.168.1.40 worker-node1
+192.168.56.101 k8s-master
+192.168.57.3 worker-node1
+
 192.168.1.50 worker-node2
 
 # Step 2: Configure Kubernetes Repository
